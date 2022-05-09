@@ -94,6 +94,7 @@ router.push({ path: 'home' })
 
 - router의 인스턴스 메서드를 사용하는 방식
 - 버튼 클릭시 메서드 실행 -> 메서드의 함수에 의해 이동되는 형식 
+- `this.$router.push({ name: 'lotto' })` 형태로 네비게이션 가능
 
 
 

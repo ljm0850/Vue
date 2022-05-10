@@ -336,8 +336,8 @@ methods : {
 </script>
 ```
 
-- `$emit`인스턴스 메서드를 사용해 'on-boss' 이벤트를 트리거
-  - `this.$emit('boss', this.childInputData)`
+- `$emit`인스턴스 메서드를 사용해 'child-input-change' 이벤트를 트리거
+  - `this.$emit('child-input-change', this.childInputData)`
 
 ```vue
 <template>

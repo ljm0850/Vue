@@ -166,7 +166,9 @@ const ljm = new Vue({
 
 - 조건부 렌더링
 - display CSS 속성을 토글 하는거일뿐
-  - hidden 적용 on/off 형식
+  - `<p>`태그는 존재하지만 공간을 차지 하지 않음
+  - ~~hidden~~ 
+    - css에서 적용하는 hidden은 공간도 차지
   - 자주 변경되는 경우 v-if에 비해 렌더링이 덜 반복 되는 장점
 
 #### v-if, v-else-if, v-else

@@ -89,7 +89,7 @@
   - `cd appname`
   - `vue add vuex`
     - vue에 vuex 추가
-    - store 디렉토치 생성, 그 안에 index.js 생성(Vuex core concepts가 작성되는 곳)
+    - store 디렉토리 생성, 그 안에 index.js 생성(Vuex core concepts가 작성되는 곳)
 
 
 
@@ -116,7 +116,7 @@ export default new Vuex.Store({
 <template>
     <div>
     	<childApp v-for="todo in $store.state.todos" :key="todo.date" />
-        <childApp v-for="todo in todos" :key="todo.dtae" />		//computed에 작성시
+        <childApp v-for="todo in todos" :key="todo.date" />		//computed에 작성시
             
 	~~~~
             
@@ -381,7 +381,7 @@ export default new Vuex.Store({
     ]
 })
 ...
-
+// ------------
 actions: {
     saveTodos({ state }) {
         const jsonData = JSON.stringify(state.todos)
@@ -390,6 +390,6 @@ actions: {
 }
 ```
 
-- 저장이 필요한 함수 실행시마다 `dispatch('saveTodos')`를 이용하여 저장
+- ~~저장이 필요한 함수 실행시마다 `dispatch('saveTodos')`를 이용하여 저장~~
 - 불러오기는 `localStorage.getItem('name')`
 - 자세한건 공식 문서를 찾아보자

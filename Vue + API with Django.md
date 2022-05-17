@@ -70,6 +70,8 @@
 
 ### dj-rest-auth & django-allauth 라이브러리
 
+- https://www.django-rest-framework.org/api-guide/authentication/
+
 #### 설치
 
 - `$ pip install django-allauth`
@@ -78,6 +80,7 @@
 #### settings.py
 
 - `INSTALLED_APPS`
+  
   - rest_framework
   - rest_framework.authtoken
   - dj_rest_auth

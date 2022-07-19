@@ -89,6 +89,7 @@ export default {
     })
   }
 }
+```
 
 #### Lifecycle 종류
 - beforeCreate : setup()에서는 불필요
@@ -106,9 +107,12 @@ export default {
 - Activated : `onActvated`
 - deactvated : `onDeactivated`
 
-https://dltqhkoxgn1gx.cloudfront.net/img/posts/how-to-use-lifecycle-hooks-in-vue3-1.png
+![how-to-use-lifecycle-hooks-in-vue3-1](Vue3.assets/how-to-use-lifecycle-hooks-in-vue3-1.png)
+
+
 
 ### props와 emit 분리
+
 - setup()에서 전달인자로 명시하는 방식으로 분리
 
 - Vue2
@@ -129,7 +133,8 @@ methods : {
 },
 ```
 
--Vue3
+- Vue3
+
 ```Vue
 //props 선언 & 사용
 export default {
@@ -147,3 +152,19 @@ export default {
     ...
   }
 }
+```
+
+
+
+---
+
+### reactive
+
+```js
+import { reactive } from 'vue'
+
+// 반응형 상태
+const state = reactive({
+  count: 0
+})
+```

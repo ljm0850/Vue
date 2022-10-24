@@ -50,6 +50,9 @@
   - 프로젝트 생성 후에 왠만하면 `$ cd ljm-vue`터미널 주소를 옮기자
 - `$ npm run serve`
   - 서버 실행
+- `$ vue add typescript`
+  - Javascript 대신 TypeScript 사용
+
 
 
 
